@@ -46,5 +46,10 @@ namespace CretaceousClient.Models
       string JsonAnimal = JsonConvert.SerializeObject(animal);
       ApiHelper.Put(animal.AnimalId, JsonAnimal);
     }
+
+    public static void Delete(int id)
+    {
+      ApiHelper.Delete(id);
+    }
   }
 }
