@@ -8,4 +8,6 @@
 <p>Age: @Model.Age</p>
 <p>Gender: @Model.Gender</p>
 
+@Html.ActionLink("Edit details", "Edit", new { id = @Model.AnimalId })
+<br>
 @Html.ActionLink("Return to all animals", "Index")
